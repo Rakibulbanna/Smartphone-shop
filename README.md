@@ -1,3 +1,5 @@
+# Live site: https://assignment-12-9ea71.web.app/
+
 # Smartphone shop (React,Node,MongoDb) 
 This project mainly developed as assignment with react and for backend I used node & express js .
 
