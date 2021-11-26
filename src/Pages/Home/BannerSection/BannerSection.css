@@ -1,0 +1,39 @@
+.banner{
+    background: rgba(0, 0, 0, 0.2)url(../../../images/banner.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.banner-text-part{
+
+    background-color: #725229;
+    border-radius: 15px;
+    
+}
+
+.banner-text{
+    color: white;
+    text-align: left;
+    margin: 90px 0px;
+}
+
+.banner-text h1{
+    font-size: 50px;
+    font-weight: 600;
+
+}
+.banner-text p{
+    font-size: 20px;
+    color: black;
+}
+.have-look-btn{
+
+    background-color:#555555 ;
+    color: white;
+    padding: 30px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

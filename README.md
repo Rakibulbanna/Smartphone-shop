@@ -12,5 +12,4 @@ This project is mainly developed on basis of fake data,fake information and loca
 
 
 ## Note
-This Project is not a professional one it's just created for practice purpose.# niche-website-client-side-Rakibulbanna
-# Smartphone-shop--Client-side-
+This Project is not a professional one it's just created for practice purpose.
