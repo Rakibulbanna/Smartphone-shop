@@ -13,7 +13,7 @@ const MakeAdmin = () => {
     const handleMakeAdmin = (e) => {
         const user = { email }
         console.log(user);
-        fetch('https://cryptic-harbor-79594.herokuapp.com/makeAdmin', {
+        fetch('https://smartphone-shop-server-side.onrender.com/makeAdmin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

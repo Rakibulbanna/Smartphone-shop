@@ -11,7 +11,7 @@ const DashboardHome = () => {
 
     const [allOrders, setAllOrders] = useState([])
     useEffect(() => {
-        fetch('https://cryptic-harbor-79594.herokuapp.com/allOrders')
+        fetch('https://smartphone-shop-server-side.onrender.com/allOrders')
             .then(res => res.json())
             .then(data => {
                 setAllOrders(data)
@@ -26,7 +26,7 @@ const DashboardHome = () => {
 
     const email = user.email;
     useEffect(() => {
-        fetch(`https://cryptic-harbor-79594.herokuapp.com/myOrders/${email}`)
+        fetch(`https://smartphone-shop-server-side.onrender.com/myOrders/${email}`)
             .then(res => res.json())
             .then(data => {
 
@@ -38,7 +38,7 @@ const DashboardHome = () => {
     const handleDeleteOrder = (id) => {
         const isConfirm = window.confirm("⛔⛔ Are You Sure About Delete This Order ?")
         if (isConfirm) {
-            fetch(`https://cryptic-harbor-79594.herokuapp.com/ordersDelete/${id}`, {
+            fetch(`https://smartphone-shop-server-side.onrender.com/ordersDelete/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

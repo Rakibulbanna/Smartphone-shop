@@ -12,7 +12,7 @@ const Review = () => {
     const onSubmit = data => {
         const review = data;
 
-        fetch('https://cryptic-harbor-79594.herokuapp.com/addReview', {
+        fetch('https://smartphone-shop-server-side.onrender.com/addReview', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

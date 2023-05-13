@@ -9,7 +9,7 @@ const ManageAllOrders = () => {
 
     useEffect(() => {
 
-        fetch('https://cryptic-harbor-79594.herokuapp.com/allOrders')
+        fetch('https://smartphone-shop-server-side.onrender.com/allOrders')
             .then(res => res.json())
             .then(data => setOrders(data))
 
@@ -21,7 +21,7 @@ const ManageAllOrders = () => {
     const handleDeleteOrder = (id) => {
         const isConfirm = window.confirm("⛔⛔ Are You Sure About Delete This Order ?")
         if (isConfirm) {
-            fetch(`https://cryptic-harbor-79594.herokuapp.com/ordersDelete/${id}`, {
+            fetch(`https://smartphone-shop-server-side.onrender.com/ordersDelete/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

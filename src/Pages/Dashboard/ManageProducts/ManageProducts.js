@@ -6,7 +6,7 @@ const ManageProducts = () => {
     const [isDeleted, setIsDeleted] = useState(false)
 
     useEffect(() => {
-        fetch('https://cryptic-harbor-79594.herokuapp.com/watches')
+        fetch('https://smartphone-shop-server-side.onrender.com/watches')
             .then(res => res.json())
             .then(data => {
                 setWatches(data)
@@ -19,7 +19,7 @@ const ManageProducts = () => {
         const confirmDelete = window.confirm("Are You Confirm About This Deletion ⛔⛔?")
         if (confirmDelete) {
 
-            fetch(`https://cryptic-harbor-79594.herokuapp.com/deleteWatch/${id}`, {
+            fetch(`https://smartphone-shop-server-side.onrender.com/deleteWatch/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json'

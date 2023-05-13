@@ -70,7 +70,7 @@ const Register = () => {
 
     const addRegisterUserToDatabase = (name, email) => {
         const user = { displayName: name, email: email, }
-        fetch('https://cryptic-harbor-79594.herokuapp.com/addUsers', {
+        fetch('https://smartphone-shop-server-side.onrender.com/addUsers', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

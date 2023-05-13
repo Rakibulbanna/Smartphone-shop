@@ -12,7 +12,7 @@ const ApproveOrder = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch(`https://cryptic-harbor-79594.herokuapp.com/order/${id}`)
+        fetch(`https://smartphone-shop-server-side.onrender.com/order/${id}`)
             .then(res => res.json())
             .then(data => {
                 setOrder(data)
@@ -27,7 +27,7 @@ const ApproveOrder = () => {
         console.log(data);
 
 
-        fetch(`https://cryptic-harbor-79594.herokuapp.com/modifyOrder/${id}`, {
+        fetch(`https://smartphone-shop-server-side.onrender.com/modifyOrder/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

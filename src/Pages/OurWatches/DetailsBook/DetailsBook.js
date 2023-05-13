@@ -14,7 +14,7 @@ const DetailsBook = () => {
     const { id } = useParams();
     const [watch, setWatch] = useState([])
     useEffect(() => {
-        fetch(`https://cryptic-harbor-79594.herokuapp.com/watches/${id}`)
+        fetch(`https://smartphone-shop-server-side.onrender.com/watches/${id}`)
             .then(res => res.json())
 
             .then(data => {
@@ -33,7 +33,7 @@ const DetailsBook = () => {
     const onSubmit = data => {
 
         console.log(data);
-        fetch('https://cryptic-harbor-79594.herokuapp.com/order', {
+        fetch('https://smartphone-shop-server-side.onrender.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

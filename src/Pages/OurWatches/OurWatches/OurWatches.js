@@ -7,7 +7,7 @@ const OurWatches = () => {
     const [watches, setWatches] = useState([])
 
     useEffect(() => {
-        fetch('https://cryptic-harbor-79594.herokuapp.com/watches')
+        fetch('https://smartphone-shop-server-side.onrender.com/watches')
             .then(res => res.json())
             .then(data => {
                 setWatches(data)

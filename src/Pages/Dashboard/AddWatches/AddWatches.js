@@ -9,7 +9,7 @@ const AddWatches = () => {
     const onSubmit = data => {
         const newWatch = data;
         console.log(newWatch);
-        fetch('https://cryptic-harbor-79594.herokuapp.com/addWatches', {
+        fetch('https://smartphone-shop-server-side.onrender.com/addWatches', {
             method: 'POST',                                                                                           
             headers: {
                 'content-type': 'application/json'
