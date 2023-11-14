@@ -90,7 +90,7 @@ const Footer = () => {
                         <div className="text-white mt-4" style={{ textAlign: 'left' }}>
                             <h5 >Contact Details</h5>
                             <div className='mt-4'>
-                                <p> Email : rakib35-2638@diu.edu.bd</p>
+                                <p> Email : rakibulbanna@gmail.com</p>
                                 <p> Location : Dhanmondi,Dhaka</p>
                             </div>
 
